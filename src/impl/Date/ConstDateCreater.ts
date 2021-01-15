@@ -1,5 +1,7 @@
-export class ConstDateCreater {
-  public constHours: number;
+import { ConstDateCreaterInterface } from "../../spec/Date/ConstDateCreaterInterface";
+
+export class ConstDateCreater implements ConstDateCreaterInterface {
+  private constHours: number;
   private constMinutes: number;
   private constSeconds: number;
   public constructor() {
@@ -10,13 +12,14 @@ export class ConstDateCreater {
   }
   public calc(): string {
     let now: string =
-      "constは" +
+      "" +
+      "const is" +
+      " H: " +
       String(this.constHours) +
-      "時" +
+      " M: " +
       String(this.constMinutes) +
-      "分" +
-      String(this.constSeconds) +
-      "秒です";
+      " S: " +
+      String(this.constSeconds);
     return now;
   }
 }

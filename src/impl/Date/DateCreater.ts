@@ -1,14 +1,15 @@
-export class DateCreater {
+import { DateCreaterInterface } from "../../spec/Date/DateCreaterInterface";
+export class DateCreater implements DateCreaterInterface {
   public calc(): string {
     let date = new Date();
     let now: string =
-      "Nowは" +
+      "Now" +
+      " H: " +
       String(date.getHours()) +
-      "時" +
+      " M: " +
       String(date.getMinutes()) +
-      "分" +
-      String(date.getSeconds()) +
-      "秒です";
+      " S: " +
+      String(date.getSeconds());
     return now;
   }
 }
