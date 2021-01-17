@@ -9,7 +9,8 @@ let postCreater = new PostDataCreater();
 const exportLog = (): void => {
   console.log(date.calc());
   console.log(nowDate.calc());
-  console.log(postCreater.post());
+  // console.log(postCreater.post());
+  postCreater.post();
 };
 
 const button = document.getElementById("post");
