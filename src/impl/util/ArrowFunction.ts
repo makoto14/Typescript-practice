@@ -11,3 +11,7 @@ export class ArrowFunction {
 
   public foo4 = (): void => console.log("Hello world");
 }
+
+let createFoo = (): String => {
+  return "foo";
+};
