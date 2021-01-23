@@ -1,7 +1,7 @@
 export class PostModel {
-  id: number;
-  content: string;
-  date: Date;
+  id?: number;
+  content?: string;
+  date?: Date;
 
   // setter
   set setId(id: number) {
@@ -16,12 +16,12 @@ export class PostModel {
 
   // getter
   get getId(): number {
-    return this.id;
+    return this.id!;
   }
   get getContent(): string {
-    return this.content;
+    return this.content!;
   }
   getDate(): Date {
-    return this.date;
+    return this.date!;
   }
 }
